@@ -11,7 +11,7 @@ class Post(models.Model):
 
     def publish(self):
         self.published_date = timezone.now()
-        sels.save()
+        self.save()
 
     def __srt__(self):
         return self.title
